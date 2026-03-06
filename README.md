@@ -1,130 +1,168 @@
-# 2D 冒险游戏
+2D Adventure Game
+Project Overview
 
-## 项目简介
+This is a 2D side-scrolling adventure game developed using the Unity engine. Players control a character to explore maps, fight enemies, use skills, avoid traps, and ultimately defeat the Boss to complete the game.
 
-这是一个用Unity引擎开发的2D横版冒险游戏。玩家可以控制角色在地图中探索，战斗敌人，使用技能，避开陷阱，最终击败Boss通关。
-本游戏由我们团队自己制作，均为华南理工大学美术素材和音频素材均来自与网上的开源素材
+This game was independently developed by our team. All art assets from South China University of Technology and audio assets are sourced from open-source materials available online.
 
-## 游戏特色
+Game Features
 
-- **流畅的角色操控**：支持移动、跳跃、翻滚等基本操作
-- **战斗系统**：角色可以攻击敌人，使用魔法弹等技能
-- **血量系统**：角色有血量条，可以使用血瓶恢复生命值
-- **地图探索**：多个关卡场景，包含各种地形和障碍
-- **陷阱机制**：地刺等危险陷阱会对角色造成伤害
-- **Boss战斗**：挑战强大的Boss敌人
-- **复活系统**：角色死亡后可以在复活点重新开始
-- **精美UI界面**：包含主菜单、血量条、技能冷却等界面
+Smooth Character Control: Supports basic actions such as movement, jumping, and rolling
 
-## 技术实现
+Combat System: The character can attack enemies and use skills such as magic projectiles
 
-### 开发工具
-- **游戏引擎**：Unity 2022.3 LTS
-- **编程语言**：C#
-- **渲染管线**：Universal Render Pipeline (URP)
-- **版本控制**：Git
+Health System: The character has a health bar and can use health potions to restore HP
 
-### 主要系统
+Map Exploration: Multiple levels with diverse terrain and obstacles
 
-1. **角色控制系统**
-   
-   ​	玩家输入处理
-   
-   ​	角色移动和动画
-   
-   ​	碰撞检测
-   
-2. **战斗系统**
-   
-   ​	玩家攻击机制
-   
-   ​	敌人AI行为
-   
-   ​	伤害计算
-   
-3. **UI系统**
-   
-   ​	血量显示
-   
-   ​	技能冷却界面
-   
-   ​	游戏菜单
-   
-4. **关卡系统**
-   
-   ​	场景管理
-   
-   ​	地图瓦片系统
-   
-   ​	背景视差滚动
+Trap Mechanism: Dangerous traps such as ground spikes deal damage to the character
 
-## 项目结构
+Boss Battles: Challenge powerful Boss enemies
 
-```
+Respawn System: The character respawns at a checkpoint after death
+
+Polished UI Interface: Includes main menu, health bar, skill cooldown interface, etc.
+
+Technical Implementation
+Development Tools
+
+Game Engine: Unity 2022.3 LTS
+
+Programming Language: C#
+
+Render Pipeline: Universal Render Pipeline (URP)
+
+Version Control: Git
+
+Core Systems
+
+Character Control System
+
+Player input handling
+
+Character movement and animation
+
+Collision detection
+
+Combat System
+
+Player attack mechanics
+
+Enemy AI behavior
+
+Damage calculation
+
+UI System
+
+Health display
+
+Skill cooldown interface
+
+Game menu
+
+Level System
+
+Scene management
+
+Tilemap system
+
+Parallax background scrolling
+
+Project Structure
 Assets/
-├── Scenes/           # 游戏场景文件
-├── Scripts/          # C#脚本文件
-├── Prefabs/          # 预制体资源
-├── Audio/            # 音频文件
-├── UI_set/           # UI界面资源
-├── Map/              # 地图相关资源
-├── Enemy/            # 敌人相关资源
-├── Boss/             # Boss相关资源
-└── Trap/             # 陷阱相关资源
-```
+├── Scenes/           # Game scene files
+├── Scripts/          # C# script files
+├── Prefabs/          # Prefab assets
+├── Audio/            # Audio files
+├── UI_set/           # UI assets
+├── Map/              # Map-related assets
+├── Enemy/            # Enemy-related assets
+├── Boss/             # Boss-related assets
+└── Trap/             # Trap-related assets
+How to Run the Game
+System Requirements
 
-## 如何运行游戏
+Unity 2022.3 LTS or higher
 
-### 环境要求
-- Unity 2022.3 LTS 或更高版本
-- Windows 10/11 操作系统
+Windows 10/11 operating system
 
-### 运行步骤
-1. 下载或克隆项目到本地
-2. 使用Unity Hub打开项目
-3. 等待Unity导入和编译完成
-4. 在Project窗口中找到 `Assets/Scenes/MainMenuScene.unity`
-5. 双击打开主菜单场景
-6. 点击Unity编辑器顶部的播放按钮开始游戏
+Steps to Run
 
-### 游戏操作
-- **WAD** ：角色移动
-- **空格键**：跳跃
-- **鼠标左键**：攻击
-- **鼠标右键**：翻滚
-- **特定按键**：使用技能（Q、R、X）
+Download or clone the project locally
 
-## 主要功能说明
+Open the project using Unity Hub
 
-### 角色系统
-- 角色拥有血量值，受到伤害时会减少
-- 可以通过血瓶道具恢复血量
-- 角色死亡后会在最近的复活点重生
+Wait for Unity to finish importing and compiling
 
-### 战斗系统
-- 玩家可以使用近战攻击、翻滚（无敌帧）和多种技能（魔法子弹、属性强化、气波拳）
-- 不同敌人有不同的行为模式
-- Boss拥有更复杂的攻击方式和更高的血量
+In the Project window, locate Assets/Scenes/MainMenuScene.unity
 
-### 地图系统
-- 支持可破坏的瓦片地形
-- 包含各种陷阱，如地刺等
-- 背景支持视差滚动效果
+Double-click to open the main menu scene
 
-⭐ 核心职责与贡献 (My Role & Contributions)
+Click the Play button at the top of the Unity editor to start the game
 
-作为本项目的负责人和首席程序员，我非常荣幸能与一支充满才华与热情的团队合作，共同将《Drifter Game》从一个想法变为现实。我负责项目的整体规划、技术架构选型，并主导了多个核心系统的开发。
-我的主要贡献集中在以下几个方面：
-- 系统架构与集成 (System Architecture & Integration):
-主导了项目技术框架的选型与集成，确保了各个模块（如战斗、UI、任务系统）能够高效、低耦合地协同工作。
-搭建了游戏的核心事件管理器，以应对复杂的交互逻辑，显著提升了代码的可维护性和扩展性。
-- 关卡设计与世界构建 (Level Design & World Building):
-负责游戏世界的整体布局与地图拼接，使用 Unity Tilemap 系统构建了所有主要场景。
-实现了场景间的无缝加载与过渡机制，优化了玩家的探索体验。
-- 核心玩法与交互逻辑 (Core Gameplay & Interaction Logic):
-开发了玩家角色、敌人与地图环境之间复杂的交互系统，包括机关触发、伤害区域、可破坏对象等。
-这为游戏提供了丰富的动态元素，使战斗和探索更具趣味性。
-- 敌人AI系统 (Enemy AI Systems)
+Controls
 
-💖 开发团队 (Our Team)
-- 一个项目的成功离不开每一位成员的努力。这个游戏是我们智慧和汗水的结晶：
+W, A, D: Move character
+
+Spacebar: Jump
+
+Left Mouse Button: Attack
+
+Right Mouse Button: Roll
+
+Specific Keys: Use skills (Q, R, X)
+
+Main Features Description
+Character System
+
+The character has a health value that decreases when taking damage
+
+Health can be restored using health potion items
+
+After death, the character respawns at the nearest checkpoint
+
+Combat System
+
+Players can use melee attacks, rolling (with invincibility frames), and various skills (magic bullets, attribute enhancement, energy wave punch)
+
+Different enemies have different behavior patterns
+
+Bosses have more complex attack patterns and higher health
+
+Map System
+
+Supports destructible tile-based terrain
+
+Includes various traps such as ground spikes
+
+Background supports parallax scrolling effects
+
+⭐ Core Responsibilities & Contributions (My Role & Contributions)
+
+As the project leader and lead programmer, I was honored to collaborate with a talented and passionate team to bring Drifter Game from concept to reality. I was responsible for overall project planning, technical architecture selection, and led the development of multiple core systems.
+
+My main contributions include:
+
+System Architecture & Integration
+
+Led the selection and integration of the project’s technical framework, ensuring efficient and low-coupling collaboration between modules (such as combat, UI, and quest systems).
+
+Built the game’s core event manager to handle complex interaction logic, significantly improving code maintainability and scalability.
+
+Level Design & World Building
+
+Designed the overall layout of the game world and map assembly using Unity’s Tilemap system to build all major scenes.
+
+Implemented seamless scene loading and transition mechanisms to optimize the player’s exploration experience.
+
+Core Gameplay & Interaction Logic
+
+Developed complex interaction systems between the player, enemies, and the environment, including mechanism triggers, damage zones, and destructible objects.
+
+Added dynamic gameplay elements to enhance both combat and exploration.
+
+Enemy AI Systems
+
+💖 Development Team (Our Team)
+
+The success of this project would not have been possible without the efforts of every team member. This game is the result of our collective wisdom and hard work.
