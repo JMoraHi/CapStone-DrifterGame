@@ -71,12 +71,18 @@ Main Systems
     Parallax background scrolling
 
 Project Structure
-
-Assets/ ├── Scenes/ # Game scene files ├── Scripts/ # C# script files
-├── Prefabs/ # Prefab assets ├── Audio/ # Audio files ├── UI_set/ # UI
-interface assets ├── Map/ # Map-related assets ├── Enemy/ #
-Enemy-related assets ├── Boss/ # Boss-related assets └── Trap/ #
-Trap-related assets
+```
+Assets/
+├── Scenes/ # Game scene files 
+├── Scripts/ # C# script files
+├── Prefabs/ # Prefab assets
+├── Audio/ # Audio files
+├── UI_set/ # UI interface assets
+├── Map/ # Map-related assets
+├── Enemy/ #Enemy-related assets
+├── Boss/ # Boss-related assets
+└── Trap/ #Trap-related assets
+```
 
 How to Run the Game
 
